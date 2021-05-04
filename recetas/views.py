@@ -5,18 +5,18 @@ from rest_framework.response import Response
 from rest_framework.reverse import reverse
 from .models import Receta
 
+
+# Web browseable API
 @api_view(['GET'])
 def api_root(request):
-    return Response({'recetas' : 
-    
-    reverse('lista-recetas', request=request, format=None),
-    })
+    return Response({'recetas': reverse('lista-recetas', request=request, format=None)})
 
 
-# Paginación?
+# ? ¿Debería poner paginación?
 class ListaRecetas(ListAPIView):
     serializer_class = RecetaSerializer
     queryset = Receta.objects.all()
+
 
 class CrearReceta(CreateAPIView):
     serializer_class = RecetaSerializer

@@ -18,10 +18,10 @@ from django.urls import path
 from recetas.views import ListaRecetas, api_root, CrearReceta
 from django.conf import settings
 from django.conf.urls.static import static
+
 urlpatterns = [
     path('', api_root),
     path('admin/', admin.site.urls),
     path('recetas/', ListaRecetas.as_view(), name='lista-recetas'),
     path('recetas/agregar/', CrearReceta.as_view(), name='crear-receta'),
-]  + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
- 
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
