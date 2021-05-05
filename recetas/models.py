@@ -15,4 +15,4 @@ class Receta(models.Model):
     imagen = models.ImageField(upload_to=image_path)
 
     def __str__(self):
-        return f"{self.nombre} para {self.personas} personas"
+        return f"{self.nombre} para {self.numero_personas} personas"
