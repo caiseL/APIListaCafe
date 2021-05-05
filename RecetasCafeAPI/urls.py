@@ -24,4 +24,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('recetas/', ListaRecetas.as_view(), name='lista-recetas'),
     path('recetas/agregar/', CrearReceta.as_view(), name='crear-receta'),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]
