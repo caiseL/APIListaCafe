@@ -143,8 +143,8 @@ LOGGING = {
     'disable_existing_loggers': False,
     'formatters': {
         'verbose': {
-            'format': ('%(asctime)s [%(process)d] [%(levelname)s] ' +
-                       'pathname=%(pathname)s lineno=%(lineno)s ' +
+            'format': ('%(asctime)s [%(process)d] [%(levelname)s] '
+                       'pathname=%(pathname)s lineno=%(lineno)s '
                        'funcname=%(funcName)s %(message)s'),
             'datefmt': '%Y-%m-%d %H:%M:%S'
         },
@@ -158,18 +158,22 @@ LOGGING = {
             'class': 'logging.NullHandler',
         },
         'console': {
-            'level': 'DEBUG',
+            'level': 'INFO',
             'class': 'logging.StreamHandler',
             'formatter': 'verbose'
         }
     },
     'loggers': {
-        'testlogger': {
+        'django': {
             'handlers': ['console'],
-            'level': 'INFO',
-        }
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+        'django.request': {
+            'handlers': ['console'],
+            'level': 'DEBUG',
+            'propagate': False,
+        },
     }
-}
-
 
 django_heroku.settings(locals(), logging=False)
