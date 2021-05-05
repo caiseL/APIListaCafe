@@ -137,3 +137,5 @@ CLOUDINARY_STORAGE = {
     'API_KEY': config('CLOUDINARY_API_KEY'),
     'API_SECRET': config('CLOUDINARY_API_SECRET')
 }
+
+django_heroku.settings(locals(), logging=False)
