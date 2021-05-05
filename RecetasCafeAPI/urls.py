@@ -21,5 +21,5 @@ urlpatterns = [
     path('', api_root),
     path('admin/', admin.site.urls),
     path('recetas/', ListaRecetas.as_view(), name='lista-recetas'),
-    path('recetas/agregar/', CrearReceta.as_view(), name='crear-receta'),
+    path('recetas/agregar/', CrearReceta.as_view(), name='agregar-receta'),
 ]

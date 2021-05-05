@@ -9,7 +9,7 @@ from .models import Receta
 # Web browseable API
 @api_view(['GET'])
 def api_root(request):
-    return Response({'recetas': reverse('lista-recetas', request=request, format=None)})
+    return Response({'recetas': reverse('lista-recetas', request=request, format=None), 'agregar-receta': reverse('agregar-receta', request=request, format=None)})
 
 
 # ? ¿Debería poner paginación?
