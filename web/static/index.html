@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/icons/icomoon/style.css" />
+
+    <link rel="stylesheet" href="css/flickity.css" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recetas para Café</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-wrapper">
+          <ul>
+            <li>
+              <a href="#">
+                <h1 class="logo">COFFEE</h1>
+              </a>
+            </li>
+
+            <li><a href="#principal">Inicio</a></li>
+            <li><a href="#recetas">Recetas</a></li>
+            <li><a href="#sobre_nosotros">Sobre nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="row content-wrapper" id="principal">
+      <div class="column">
+        <h1>Let's Start Cooking With Popular Recipes</h1>
+        <h2>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
+          eveniet velit ea at, ratione in. Esse dolore aliquid id laboriosam
+        </h2>
+        <a class="primary-button" href="#recetas">Ver recetas</a>
+        <a class="secondary-button" href="#recetas">Agregar una receta</a>
+      </div>
+      <div class="column">
+        <img src="../assets/images/imagen_principal.svg" alt="Café" />
+      </div>
+    </div>
+
+    <div id="recetas" class="content-wrapper">
+      <div id="info">
+        <h1>Recetas para café</h1>
+        <h2>
+          Conoce todas las recetas con las que <br />
+          contamos
+        </h2>
+      </div>
+      <div class="main-gallery">
+        <div class="row gallery-cell">
+          <div class="column">
+            <img src="../assets/images/cafe1.png" alt="Café americano" />
+            <h3>5 personas</h3>
+          </div>
+          <div class="column">
+            <h4>Café</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste amet
+              molestiae maiores eveniet temporibus! Facere at ratione, enim
+              tempora aut, lorem ipsum lorem dolor Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Ex cupiditate excepturi, dolores
+              rerum corporis in iste nobis placeat labore soluta aperiam! Eius
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+              facere sed illum culpa voluptatibus, voluptatem dolor, ipsa soluta
+              et sunt unde, excepturi eius? Eos veritatis facilis quod voluptate
+              illo ipsa! et, voluptatum maiores eligendi cumque facere
+              praesentium fuga.
+            </p>
+            <a href="#">Leer más</a>
+          </div>
+        </div>
+        <div class="row gallery-cell">
+          <div class="column">
+            <img src="../assets/images/cafe1.png" alt="Café americano" />
+            <h3>5 personas</h3>
+          </div>
+          <div class="column">
+            <h4>
+              Café blahlblahaa aaaaaa aaa aaa aaaa aaaa aaaaa aaaaaa aaaaaaaa
+              aaaaaaaaaaaaa aaaaaaaalaaaaa
+            </h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste amet
+              molestiae maiores eveniet temporibus! Facere at ratione, enim
+              tempora aut, lorem ipsum lorem dolor Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Ex cupiditate excepturi, dolores
+              rerum corporis in iste nobis placeat labore soluta aperiam! Eius
+              et, voluptatum maiores eligendi cumque facere praesentium fuga.
+            </p>
+            <a href="#">Leer más</a>
+          </div>
+        </div>
+        <div class="gallery-cell row">
+          <div class="column">
+            <img src="../assets/images/cafe2.jpg" alt="Café americano" />
+            <h3>Para 5 <i class="icon-person"> </i></h3>
+          </div>
+          <div class="column">
+            <h4>
+              Café blahlblahaa aaaaaa aaa aaa aaaa aaaa aaaaa aaaaaa aaaaaaaa
+              aaaaaaaaaaaaa aaaaaaaalaaaaa
+            </h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste amet
+              molestiae maiores eveniet temporibus! Facere at ratione, enim
+              tempora aut, lorem ipsum lorem dolor Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Ex cupiditate excepturi, dolores
+              rerum corporis in iste nobis placeat labore soluta aperiam! Eius
+              et, voluptatum maiores eligendi cumque facere praesentium fuga.
+            </p>
+            <a href="#">Leer más</a>
+          </div>
+        </div>
+
+        <div class="gallery-cell">A</div>
+        <div class="gallery-cell">A</div>
+
+        <div class="gallery-cell">A</div>
+      </div>
+
+      <a class="collapsible secondary-button">Agrega una nueva receta</a>
+      <div class="content">
+        <form id="formulario_receta">
+          <label for="nombre_receta">Nombre de la receta:</label>
+          <br />
+          <input
+            type="text"
+            name="Ingresa tu email"
+            id="nombre_receta"
+            name="nombre_receta"
+            placeholder="Café con..."
+            required
+          />
+          <br />
+          <label for="ingredientes">Ingredientes</label>
+          <br />
+          <textarea
+            name="ingredientes"
+            id="ingredientes"
+            placeholder="Una cucharada de..."
+            required
+          ></textarea>
+          <br />
+          <label for="personas">Número de personas por porción</label>
+          <br />
+          <input type="number" name="personas" id="personas" required />
+          <br />
+          <label for="personas">Receta</label>
+          <br />
+          <textarea
+            name="personas"
+            id="personas"
+            placeholder="Primero..."
+            required
+          ></textarea>
+          <br />
+          <input
+            type="file"
+            id="imagen"
+            name="imagen"
+            value="Sube una imagen"
+            class="primary-button"
+            required
+          />
+          <br />
+
+          <input type="submit" value="Enviar" class="primary-button" />
+        </form>
+      </div>
+    </div>
+    <div id="sobre">
+      <h2>Nuestro propósito</h2>
+
+      <p>
+        Buscamos dar a conocer nuevas recetas de café. <br />Recetas de todo
+        tipo, sencillas tanto como dificiles de hacer
+      </p>
+
+      <small>(Y el mio es pasar este batch)</small>
+    </div>
+
+    <div id="sobre_nosotros">
+      <h2>Sobre nosotros</h2>
+
+      <p>Somos una ...</p>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br />Numquam
+        nemo assumenda corrupti reiciendis reprehenderit <br />ratione vel
+        aspernatur quidem. Ad consequatur atque beatae quasi quae,<br />
+        eius tempora nostrum modi officia expedita?
+      </p>
+      <img src="../assets/images/coffee_beans2.svg" alt="Coffee bean" />
+    </div>
+
+    <footer class="content-wrapper">
+      <h1>COFFEE</h1>
+
+      <a href="https://github.com/caiseL" target="_blank">
+        <i class="icon-github"></i>
+        caiseL
+      </a>
+
+      <a href="mailto: cristophertraperoo@gmail.com">
+        <i class="icon-envelope"></i>
+        cristophertraperoo@gmail.com</a
+      >
+    </footer>
+    <script src="js/flickity.pkgd.min.js"></script>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
