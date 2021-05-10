@@ -118,9 +118,9 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+WHITENOISE_MANIFEST_STRICT = False
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-STATIC_ROOT = BASE_DIR / 'static'
 STATIC_URL = '/static/'
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
@@ -172,4 +172,4 @@ LOGGING = {
         },
     }
 }
-django_heroku.settings(config=locals(), staticfiles=False, logging=False)
+django_heroku.settings(config=locals(), logging=False)
